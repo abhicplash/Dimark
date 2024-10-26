@@ -3,7 +3,6 @@ import Layout from "../Layout/Layout";
 import "./Contact.css";
 import { FaAddressCard } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-import { FaPhoneVolume } from "react-icons/fa6";
 import { MdPhoneInTalk } from "react-icons/md";
 
 const Contact = () => {
@@ -31,7 +30,7 @@ const Contact = () => {
               <div className="contactIcon">
                 <MdPhoneInTalk />
               </div>
-              <span className="contact-info-head">Address</span>
+              <span className="contact-info-head">Fell Free To Call</span>
               <span className="contact-info-para">+971 54 279 1548</span>
             </div>
             <hr />
