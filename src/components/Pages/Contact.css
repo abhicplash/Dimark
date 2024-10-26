@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   color: var(--white);
-
+  gap: 2rem;
   padding: 3rem 0;
 }
 .PageTop-wrapper {
@@ -123,13 +123,13 @@
   width: 90%;
   align-items: center;
   justify-content: center;
-  gap: 5%;  
+  gap: 5%;
 }
 .contactform-row input {
   height: 2rem;
-  width: 43%;
+  width: 43.5%;
   color: var(--white);
-  
+
   background-color: transparent;
   font-family: inherit;
   border: 1px solid var(--white);
@@ -138,7 +138,11 @@
   padding-left: 10px;
   border-radius: 8px;
 }
-
+.mapContact {
+  width: 74%;
+  height: 60vh;
+  border-radius: 15px;
+}
 @media (max-width: 768px) {
   .PageTop-wrapper p {
     width: 85%;
@@ -160,5 +164,9 @@
   }
   .contactform-row input {
     width: 95%;
+  }
+  .mapContact {
+    width: 90%;
+    height: 40vh;
   }
 }

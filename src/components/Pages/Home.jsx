@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Layout>
       <HomeBanner />
-      {/* <HomeAbout/> */}
+      <HomeAbout/>
     </Layout>
   );
 };

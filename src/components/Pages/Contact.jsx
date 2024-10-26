@@ -64,6 +64,14 @@ const Contact = () => {
             <button className="contact-btn">send message</button>
           </div>
         </div>
+        <iframe
+          className="mapContact"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3608.129695322447!2d55.380971!3d25.2662222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fc5663586722f51%3A0x8c6df0cef1bc2813!2sDimark%20Marketing%20Management%20LLC!5e0!3m2!1sen!2sin!4v1729964610097!5m2!1sen!2sin"
+          title="mapContact"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </Layout>
   );
