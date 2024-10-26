@@ -1,0 +1,44 @@
+.HomeAbout-container {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(to bottom, #01141c, #084746); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomeAbout-main-container {
+  width: 97%;
+  height: 80vh;
+  background: url("../../assets/about/aboutbnr.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+  display: flex;
+  align-items: end;
+  padding-bottom: 5vh;
+  /* padding-left: 5vh;  */
+}
+.aboutDetails {
+  height: 30vh;
+  width: 30%;
+  background-color: #044c48cc;
+  /* border: 5px solid #089089; */
+  border-radius: 15px;
+  color: white;
+ font-size: 2.3rem;
+  text-transform: capitalize;
+  padding: 10px;
+  margin-left: 2%;
+  /* margin-bottom: 1rem; */
+}
+@media (max-width: 768px) {
+  .HomeAbout-main-container {
+    height: 55vh;
+    justify-content: center;
+  }
+  .aboutDetails {
+    width: 80%;
+    font-size: 1.6rem;
+  }
+}

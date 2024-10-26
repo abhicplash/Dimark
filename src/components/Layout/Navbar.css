@@ -1,0 +1,131 @@
+.navbar-container {
+  width: 100%;
+  min-height: 9vh;
+  /* background-color: #070432; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logoimg {
+  width: 6rem;
+  height: 3rem;
+  z-index: 100;
+  position: relative;
+}
+.navIcon {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--GreenishBlue);
+  z-index: 100;
+}
+.listmobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style: none;
+  /* background-color: red; */
+  background: linear-gradient(to bottom, #010005, #089089);
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 0;
+  animation: slideup .5s forwards;
+  z-index: 70;
+}
+@keyframes slideup {
+  0% {
+    right: 90vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+.listmobile a {
+  width: 90%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 1.1rem;
+}
+.listmobile a:hover {
+  background-color: #0890899e;
+  transition-duration: 1s;
+  font-weight: 500;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+.listLarger {
+  display: flex;
+  border: 0.5px solid #0890899e;
+  text-transform: capitalize;
+  /* gap: %; */
+  /* width: 50%; */
+  justify-content: center;
+  padding: 5px 2rem;
+  border-radius: 50px;
+}
+.listLarger a {
+  /* border: 1px solid; */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  border-radius: 30px;
+}
+.listLarger a:hover {
+  background-color: #0890899e;
+  transition-duration: 1.2s;
+}
+/* -------------------------------- */
+
+.bnrDetails {
+  text-align: center;
+}
+.btnbnr {
+  height: 2.5rem;
+  /* width: 8rem; */
+  padding: 0 1rem;
+  border-radius: 30px;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  /* font-size: 0.2rem; */
+}
+.navButton{
+  width: 5rem;
+  height: 2rem;
+  color: var(--white);
+  /* background-color: #0890899e; */
+  background-color: #08908980;
+  border-radius: 30px;
+}
+.navButton:hover{
+  background-color: #0aaca4b0;
+  transition-duration: 1.2s;
+}
+/* -------------------------------- */
+@media (max-width: 768px) {
+  .navIcon {
+    display: flex;
+  }
+  .listLarger {
+    display: none;
+  }
+  .navButton {
+    display: none;
+  }
+}
