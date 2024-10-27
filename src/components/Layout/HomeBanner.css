@@ -149,7 +149,8 @@ button:active .button-text {
 
 /* ----------------------------- */
 .detailpara {
-  width: 40%;
+  width: 43%;
+  text-transform: capitalize;
   /* transform: rotate(20deg); */
 }
 .potential {
@@ -158,6 +159,7 @@ button:active .button-text {
   color: #fff;
   /* rotate: 30deg; */
   transform: rotate(20deg);
+  padding: 0 5px;
   /* color: #be23cf89; */
 }
 @media (max-width: 768px) {
