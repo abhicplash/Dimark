@@ -4,7 +4,7 @@ import "./HomeBanner.css";
 const HomeBanner = () => {
   return (
     <div className="HomeBanner-container">
-      <h2 className="welcome">Welcome to NEW </h2>
+      <h2 className="welcome">Welcome to DiMark </h2>
       <span className="headbnr">
         We believe in <br />
         turning <span className="potential"> your </span>

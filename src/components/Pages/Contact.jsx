@@ -1,11 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../Layout/Layout";
 import "./Contact.css";
-import { FaAddressCard } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import { FaAddressCard, FaEnvelope } from "react-icons/fa";
 import { MdPhoneInTalk } from "react-icons/md";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    subject: "",
+    contactNumber: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Construct the message
+    const message = `Name: ${formData.name}\nCompany: ${formData.company}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nContact Number: ${formData.contactNumber}\nMessage: ${formData.message}`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // WhatsApp API URL
+    const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, "_blank");
+
+    // Clear the form after sending
+    setFormData({
+      name: "",
+      company: "",
+      email: "",
+      subject: "",
+      contactNumber: "",
+      message: ""
+    });
+  };
+
   return (
     <Layout>
       <div className="contact-container">
@@ -30,7 +68,7 @@ const Contact = () => {
               <div className="contactIcon">
                 <MdPhoneInTalk />
               </div>
-              <span className="contact-info-head">Fell Free To Call</span>
+              <span className="contact-info-head">Feel Free To Call</span>
               <span className="contact-info-para">+971 54 279 1548</span>
             </div>
             <hr />
@@ -45,23 +83,65 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-details-container">
-            <h2>Get in Touch</h2>
-            <div className="contactform-row">
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="Company" />
-            </div>
-            <div className="contactform-row">
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Subject" />
-            </div>
-
-            <input
-              type="text"
-              placeholder="Contact Number"
-              className="contact-number"
-            />
-            <textarea placeholder="Message" />
-            <button className="contact-btn">send message</button>
+            <form onSubmit={handleSubmit}>
+              <h2>Get in Touch</h2>
+              <div className="contactform-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Company"
+                  value={formData.company}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="contactform-row">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+              </div>
+              <input
+                type="text"
+                name="contactNumber"
+                placeholder="Contact Number"
+                className="contact-number"
+                value={formData.contactNumber}
+                onChange={handleChange}
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+              <button className="learn-more" type="submit">
+                <span aria-hidden="true" className="circle">
+                  <span className="icon arrow" />
+                </span>
+                <span className="button-text">Send message</span>
+              </button>
+            </form>
           </div>
         </div>
         <iframe

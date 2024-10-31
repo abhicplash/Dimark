@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 1.2rem;
 }
-.contact-details-container {
+.contact-details-container form{
   display: flex;
   flex-direction: column;
   border: 1px solid;
@@ -36,11 +36,12 @@
 .contact-information-wrapper {
   border-radius: 15px;
   padding: 3rem 0;
-  width: 40%;
+  width: 30%;
   gap: 2%;
   border: 1px solid #023633;
   /* background: radial-gradient(red,blue); */
-  background: radial-gradient(#177771, #023633);
+  background: radial-gradient(#04625e,#023633);
+  /* background: radial-gradient(#177771, #023633); */
 }
 .contactIcon {
   display: flex;
@@ -49,7 +50,8 @@
   border-radius: 100%;
   color: white;
   /* background-color: red; */
-  background-color: var(--Secondry);
+  /* background-color: var(--Secondry); */
+  background: linear-gradient(to bottom,#023633,#089089);
   padding: 10px;
   font-size: 2rem;
 }
@@ -155,7 +157,7 @@
     flex-direction: column-reverse;
   }
   .contact-information-wrapper {
-    width: 95%;
+    width: 90%;
   }
   .contactform-row {
     flex-direction: column;
