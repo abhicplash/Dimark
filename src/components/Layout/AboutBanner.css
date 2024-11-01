@@ -77,7 +77,7 @@
   /* text-align: justify; */
   font-weight: 300;
   /* width: 85%; */
-  color: #b4dcc4;
+  color: var(--CeladonSorbet);
 }
 .changestyle {
   background-color: #08908980;

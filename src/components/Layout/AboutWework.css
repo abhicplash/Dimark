@@ -1,0 +1,8 @@
+.AboutWework-container {
+  width: 100%;
+  min-height: 100vh;
+}
+.AboutWework-container h1{
+    text-align: center;
+    color: var(--CeladonSorbet);
+}
