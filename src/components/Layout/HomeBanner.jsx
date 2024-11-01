@@ -8,9 +8,9 @@ const HomeBanner = () => {
       <h2 className="welcome">Welcome to DiMark </h2>
       <span className="headbnr">
         We believe in <br />
-        turning 
-        {/* <span className="potential">  */}
-          your 
+        turning your 
+                {/* <span className="potential">  */}
+          
           {/* </span> */}
         <br />
         vision <br />

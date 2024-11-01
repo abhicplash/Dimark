@@ -9,6 +9,7 @@ const AboutIntro = () => {
       <span className="Head">Get to Know Us</span>
       <div className="aboutIntroWrap">
         <img src={imageintro} alt="" className="imageintro" />
+        
         <div className="wrapDetails">
           <span className="OtherHeads">Who We Are</span>
           <span className="abIntroPara">
@@ -20,7 +21,7 @@ const AboutIntro = () => {
           </span>
           <span className="OtherHeads">Our mission is simple</span>
           <span className="abIntroPara">
-            to be a reliable, results-driven partner that goes the extra mile
+            To be a reliable, results-driven partner that goes the extra mile
             for our clients. Through our wide range of design, marketing, and
             branding services, we make it our goal to elevate your brand,
             enhance customer engagement, and drive sustainable growth.

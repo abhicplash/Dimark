@@ -12,11 +12,11 @@ const App = () => {
     <BrowserRouter>
     <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

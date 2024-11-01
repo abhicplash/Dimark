@@ -1,0 +1,16 @@
+.ServiceList-container {
+  width: 100%;
+  min-height: 100vh;
+}
+.ServiceList-container h1{
+    color: var(--PoolGreen);
+    text-align: center;
+}
+.ServiceList-Details-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ServiceList-card{
+    width: 17rem;
+    padding: 2rem 0;
+}
