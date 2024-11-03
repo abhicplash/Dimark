@@ -104,7 +104,7 @@ export const singleServiceList = [
   },
   {
     id: 3,
-    serviceImg: design,
+    serviceImg: branding,
     ServiceName: "Branding Services",
     ServiceSubText: "Creating Visuals That Speak Volumes",
     serviceDesc:

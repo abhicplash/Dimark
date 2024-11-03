@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 import "./SingleService.css";
-import single from "../../assets/singleService/desiging.jpg";
 import { singleServiceList } from "../../utils/SingleService";
 import { useParams } from "react-router-dom";
 
@@ -13,7 +12,7 @@ const SingleService = () => {
         {singleServiceList
           .filter((item) => item.id == id)
           .map((list) => (
-            <div>
+            <div key={list.id}>
               <div className="PageTop">
                 <h1 className="singleserviceName">{list.ServiceName}</h1>
                 <span className="servicesubText">{list.ServiceSubText}</span>
@@ -34,8 +33,8 @@ const SingleService = () => {
                   Check Out Our {list.ServiceName}
                 </h1>
                 <div className="SingleServiceItems-container">
-                  {list.items.map((listItems) => (
-                    <div className="singleServiceList-card">
+                  {list.items.map((listItems,index) => (
+                    <div className="singleServiceList-card" key={index}>
                       <div className="singleServiceDetails">
                         <span className="singleServiceHead">
                           {listItems.name}
