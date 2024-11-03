@@ -6,6 +6,7 @@ import Services from "./components/Pages/Services";
 import Portfolio from "./components/Pages/Portfolio";
 import Contact from "./components/Pages/Contact";
 import ScrollToTop from "./components/Layout/ScrollToTop";
+import SingleService from "./components/Pages/SingleService";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/services" element={<Services />} />
+        <Route exact path="/services/:id" element={<SingleService   />} />
         <Route exact path="/portfolio" element={<Portfolio />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>

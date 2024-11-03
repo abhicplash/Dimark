@@ -9,7 +9,7 @@ const ServiceBanner = () => {
         <span className="servicepagetophead">Services</span>
         <span className="servicepagetoppara">
           {/* Innovative Solutions for <br /> Your Digital Success */}
-          Explore our tailored solutions designed to <br />  elevate your brand
+          Explore our tailored solutions designed to <br  />  elevate your brand
           and drive measurable growth.
         </span>
       </div>

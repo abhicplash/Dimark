@@ -22,7 +22,7 @@
 }
 .pageTop .servicepagetoppara {
   color: var(--CeladonSorbet);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 .serviceDetailswrapper {
   display: flex;
@@ -48,7 +48,6 @@
   color: var(--Secondry);
   font-size: 1.1rem;
   width: 90%;
-
 }
 .ServiceBanner-container {
   width: 76%;
@@ -78,8 +77,13 @@
   align-items: center;
 }
 @media (max-width: 768px) {
+  .servicepagetoppara br {
+    display: none;
+  }
   .ServiceBanner-container {
     flex-direction: column;
+    background: linear-gradient(to bottom, #022b29a5, #09565298);
+    border: 1px solid #0aaca481;
   }
   .serviceImageWrapper {
     width: 100%;
