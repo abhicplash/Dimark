@@ -8,16 +8,19 @@ import image3 from "../assets/service/branding.JPG";
 
 export const cardData = [
   {
+    id: 1,
     name: "Design Services",
     image: image1,
     desc: "Creating Visuals That Speak Volumes"
   },
   {
+    id: 2,
     name: "Marketing Services",
     image: image2,
     desc: "Strategies That Drive Engagement and Growth"
   },
   {
+    id: 3,
     name: "Branding Services",
     image: image3,
     desc: "Establishing a Strong Brand Identity"
