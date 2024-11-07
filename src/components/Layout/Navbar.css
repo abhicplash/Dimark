@@ -13,9 +13,11 @@
   z-index: 100;
   position: relative;
 }
+.logoimgnavList{
+  width: 9rem;
+}
 .navIcon {
   display: none;
- 
 }
 .listmobile {
   display: flex;
@@ -53,14 +55,14 @@
   border-radius: 5px;
   color: var(--white);
   font-size: 1.2rem;
-  border-bottom: 1px solid #0aaca47c ;
+  border-bottom: 1px solid #0aaca47c;
   background-color: red;
-  background: linear-gradient(to bottom ,#03393379,#013f3c55);
+  background: linear-gradient(to bottom, #03393379, #013f3c55);
 }
 .listmobile a:hover {
   /* background-color: #0890899e; */
   /* background: linear-gradient(to bottom ,#04ac9c,#089089); */
-  background: linear-gradient(to bottom ,#075249b2,#013f3c8c);
+  background: linear-gradient(to bottom, #075249b2, #013f3c8c);
 
   transition-duration: 1s;
   font-weight: 500;
@@ -109,7 +111,7 @@
   outline: none;
   /* font-size: 0.2rem; */
 }
-.navButton{
+.navButton {
   width: 5rem;
   height: 2rem;
   color: var(--white);
@@ -117,11 +119,23 @@
   background-color: #08908980;
   border-radius: 30px;
 }
-.navButton:hover{
+.navButton:hover {
   background-color: #0aaca4b0;
   transition-duration: 1.2s;
 }
 /* -------------------------------- */
+.listaddons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listaddons h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--CeladonSorbet);
+  text-align: center;
+}
 @media (max-width: 768px) {
   .navIcon {
     display: flex;

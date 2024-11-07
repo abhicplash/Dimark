@@ -15,7 +15,7 @@ export const HomeContact = () => {
           bring your brand’s vision to life. <br /> Contact us today to get
           started!
         </div>
-        <Link to={"/contact"}>
+        <Link to={"/services"}>
           <button className="learn-more">
             <span aria-hidden="true" className="circle">
               <span className="icon arrow" />

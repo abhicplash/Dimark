@@ -3,7 +3,11 @@ import "./Navbar.css";
 import logo from "../../assets/logo/logo.png";
 import { FaBars } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { MdLocalPhone } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+// import { MdLocalPhone } from "react-icons/md";
 
 const Navbar = () => {
   const [view, setView] = useState(false);
@@ -12,25 +16,37 @@ const Navbar = () => {
       <Link to={"/"}>
         <img src={logo} alt="logo" className="logoimg" />
       </Link>
-      {view
-        ? <ul className="listmobile">
-            <Link to={"/"}>
-              <li className="item">home</li>
-            </Link>
-            <Link to={"/about"}>
-              <li className="item">about us</li>
-            </Link>
-            <Link to={"/services"}>
-              <li className="item">services</li>
-            </Link>
-            <Link to={"/portfolio"}>
-              <li className="item">portfolio</li>
-            </Link>
-            <Link to={"/contact"}>
-              <li className="item">Contact us</li>
-            </Link>
-          </ul>
-        : null}
+      {view ? (
+        <ul className="listmobile">
+          <Link to={"/"}>
+            <li className="item">home</li>
+          </Link>
+          <Link to={"/about"}>
+            <li className="item">about us</li>
+          </Link>
+          <Link to={"/services"}>
+            <li className="item">services</li>
+          </Link>
+          <Link to={"/portfolio"}>
+            <li className="item">portfolio</li>
+          </Link>
+          <Link to={"/contact"}>
+            <li className="item">Contact us</li>
+          </Link>
+          <div className="listaddons">
+            <img src={logo} alt="logo" className="logoimgnavList" />
+            <h2>
+              Your Ultimate <br /> Marketing Partner
+            </h2>
+            <div className="footer-socio-Links">
+              <FaFacebookSquare className="icon" />
+              <FaInstagram className="icon" />
+              <FaXTwitter className="icon" />
+              <FaLinkedin className="icon" />
+            </div>
+          </div>
+        </ul>
+      ) : null}
       <div className="listLarger">
         <Link to={"/"}>
           <div className="item">home</div>
@@ -54,9 +70,7 @@ const Navbar = () => {
           setView(!view);
         }}
       />
-      <button className="navButton">
-        Call
-      </button>
+      <button className="navButton">Call</button>
     </div>
   );
 };

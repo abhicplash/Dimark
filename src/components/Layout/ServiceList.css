@@ -1,10 +1,13 @@
+
 .ServiceList-container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
+  gap: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* border: 1px solid; */
 }
 .ServiceList-container h1 {
   color: var(--PoolGreen);

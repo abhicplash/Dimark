@@ -5,31 +5,57 @@
   /* background: linear-gradient(to bottom,); */
   background: linear-gradient(to bottom, #010005, #045854);
   color: var(--white);
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-.footerImg {
-  width: 12rem;
+  gap: 2rem;
 }
 .footer-mainDetails {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 1rem;
 }
-.footer-mainDetails p {
-  width: 17rem;
+.footerImg {
+  width: 10rem;
 }
-.footer-menulinks{
-  list-style: none;
+.footer-socio-Links {
+  display: flex;
+  gap: 1rem;
+}
+.footer-socio-Links .icon {
+  font-size: 1.8rem;
+  color: var(--CeladonSorbet);
+}
+.footHead {
+  font-size: 1.6rem;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.7rem;
+}
+.footLink {
+  text-decoration: none;
+  color: var(--CeladonSorbet);
+}
+.footer-rightWrapper {
+  display: flex;
+  gap: 8rem;
+}
+.footerDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
+  }
+  .footer-rightWrapper {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
