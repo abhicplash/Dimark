@@ -18,19 +18,19 @@ const Navbar = () => {
       </Link>
       {view ? (
         <ul className="listmobile">
-          <Link to={"/"}>
+          <Link to={"/"} className="navMainIcon">
             <li className="item">home</li>
           </Link>
-          <Link to={"/about"}>
+          <Link to={"/about"} className="navMainIcon">
             <li className="item">about us</li>
           </Link>
-          <Link to={"/services"}>
+          <Link to={"/services"} className="navMainIcon">
             <li className="item">services</li>
           </Link>
           {/* <Link to={"/portfolio"}>
             <li className="item">portfolio</li>
           </Link> */}
-          <Link to={"/contact"}>
+          <Link to={"/contact"} className="navMainIcon">
             <li className="item">Contact us</li>
           </Link>
           <div className="listaddons">
@@ -38,11 +38,19 @@ const Navbar = () => {
             <h2>
               Your Ultimate <br /> Marketing Partner
             </h2>
-            <div className="footer-socio-Links">
-              <FaFacebookSquare className="icon" />
-              <FaInstagram className="icon" />
-              <FaXTwitter className="icon" />
-              <FaLinkedin className="icon" />
+            <div className="navbar-socio-Links">
+              <a href="https://www.facebook.com/share/158CHpRx3o/">
+                <FaFacebookSquare className="icon" />
+              </a>
+              <a href="https://www.instagram.com/dimark_marketing_management/">
+                <FaInstagram className="icon" />
+              </a>
+              <a href="https://x.com/DimarkMM">
+                <FaXTwitter className="icon" />
+              </a>
+              <a href="https://www.linkedin.com/company/dimark-marketing-management-llc/">
+                <FaLinkedin className="icon" />
+              </a>
             </div>
           </div>
         </ul>

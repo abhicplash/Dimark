@@ -9,37 +9,68 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-mainDetails">
-        <img src={logo} alt="" className="footerImg" />
-        <div className="footer-socio-Links">
-          <FaFacebookSquare className="icon" />
-          <FaInstagram className="icon" />
-          <FaXTwitter className="icon" />
-          <FaLinkedin className="icon" />
+    <div className="footer-mainWrapper">
+      <div className="footer-container">
+        <div className="footer-mainDetails">
+          <img src={logo} alt="" className="footerImg" />
+          <p>
+            we blend industry insights with creativity to craft solutions that
+            engage your audience and fuel growth.
+          </p>
         </div>
-      </div>
 
-      <div className="footer-rightWrapper">
-        <div className="footer-right">
-          <span className="footHead">Quick Links</span>
-          <div className="footerDetails">
-            <Link className="footLink">Home</Link>
-            <Link className="footLink">About Us</Link>
-            <Link className="footLink">Services</Link>
-            <Link className="footLink">Portfolio</Link>
-            <Link className="footLink">Contact Us</Link>
+        <div className="NavigationFooter">
+          <h2>Navigation Links</h2>
+          <div className="navLinks">
+            <Link to={"/"}>home</Link>
+            <Link to={"/about"}>about us</Link>
+            <Link to={"/services"}>services</Link>
+            <Link to={"/contact"}>contact us</Link>
           </div>
         </div>
-        <div className="footer-right">
-          <span className="footHead">Services</span>
-          <div className="footerDetails">
-            <Link className="footLink">Terms</Link>
-            <Link className="footLink">Policies</Link>
-            <Link className="footLink">Privacy</Link>
+        <div className="NavigationFooter">
+          <h2>Information</h2>
+          <div className="navLinks">
+            <span>
+              Dimark Marketing Management LLC
+              <br /> Dubai , United Arab Emirates.
+            </span>
+          </div>
+        </div>
+        <div className="NavigationFooter">
+          <h2>Contact</h2>
+          <div className="navLinks">
+            <span>+971-54 279 1548</span>
+            <a href="">info@dimark.ae</a>
+            {/* <Link to={"/services"}>
+              <button className="learn-more">
+                <span aria-hidden="true" className="circle">
+                  <span className="icon arrow" />
+                </span>
+                <span className="button-text">Contact us</span>
+              </button>
+            </Link> */}
           </div>
         </div>
       </div>
+      <hr />
+      {/* <div className="navbar-socio-Links">
+        <a href="https://www.facebook.com/share/158CHpRx3o/">
+          <FaFacebookSquare className="icon" />
+        </a>
+        <a href="https://www.instagram.com/dimark_marketing_management/">
+          <FaInstagram className="icon" />
+        </a>
+        <a href="https://x.com/DimarkMM">
+          <FaXTwitter className="icon" />
+        </a>
+        <a href="https://www.linkedin.com/company/dimark-marketing-management-llc/">
+          <FaLinkedin className="icon" />
+        </a>
+      </div> */}
+      <p className="copyright">
+      Copyright © 2024 Dimark.ae Powered by Dimark
+      </p>
     </div>
   );
 };
