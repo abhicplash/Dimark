@@ -7,6 +7,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import SideIcons from "./SideIcons";
+import { RiPhoneFill } from "react-icons/ri";
 // import { MdLocalPhone } from "react-icons/md";
 
 const Navbar = () => {
@@ -27,9 +29,7 @@ const Navbar = () => {
           <Link to={"/services"} className="navMainIcon">
             <li className="item">services</li>
           </Link>
-          {/* <Link to={"/portfolio"}>
-            <li className="item">portfolio</li>
-          </Link> */}
+
           <Link to={"/contact"} className="navMainIcon">
             <li className="item">Contact us</li>
           </Link>
@@ -65,9 +65,6 @@ const Navbar = () => {
         <Link to={"/services"}>
           <div className="item">services</div>
         </Link>
-        {/* <Link to={"/portfolio"}>
-          <div className="item">portfolio</div>
-        </Link> */}
         <Link to={"/contact"}>
           <div className="item">Contact </div>
         </Link>
@@ -78,7 +75,11 @@ const Navbar = () => {
           setView(!view);
         }}
       />
-      <button className="navButton">Call</button>
+      <button className="navButton">
+        <RiPhoneFill />
+        <span>+971-54 279 1548</span>
+      </button>
+      <SideIcons />
     </div>
   );
 };

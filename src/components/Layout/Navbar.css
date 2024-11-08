@@ -46,7 +46,7 @@
     right: 0;
   }
 }
-.listmobile .navMainIcon{
+.listmobile .navMainIcon {
   width: 80%;
   height: 3rem;
   display: flex;
@@ -113,12 +113,16 @@
   /* font-size: 0.2rem; */
 }
 .navButton {
-  width: 5rem;
-  height: 2rem;
+  /* width: 5rem; */
+  /* height: 2rem; */
+  padding: 0.5rem 2rem;
   color: var(--white);
   /* background-color: #0890899e; */
   background-color: #08908980;
-  border-radius: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .navButton:hover {
   background-color: #0aaca4b0;

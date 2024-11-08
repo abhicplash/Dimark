@@ -8,10 +8,7 @@ const HomeBanner = () => {
       <h2 className="welcome">Welcome to DiMark </h2>
       <span className="headbnr">
         We believe in <br />
-        turning your 
-                {/* <span className="potential">  */}
-          
-          {/* </span> */}
+        turning your
         <br />
         vision <br />
         into action
