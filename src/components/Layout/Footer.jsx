@@ -34,7 +34,7 @@ const Footer = () => {
           <h2>Contact</h2>
           <div className="navLinks">
             <span>+971-54 279 1548</span>
-            <a href="mailto:info@dimark.ae">info@dimark.ae</a>
+            <a className="mailid" href="mailto:info@dimark.ae">info@dimark.ae</a>
           </div>
         </div>
       </div>
