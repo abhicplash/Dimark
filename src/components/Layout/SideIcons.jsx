@@ -107,12 +107,12 @@ const SideIcons = () => {
         </a>
       </div>
       <div className="iconwrapper">
-        <a href="mailto:info@dimark.ae" title="Email">
+        <a href="mailto:info@dimark.ae" target="_blank" title="Email">
           <GiEnvelope />
         </a>
       </div>
       <div className="iconwrapper">
-        <a href="tel:+971542791548" title="Call">
+        <a href="tel:+971542791548" target="_blank" title="Call">
           <RiPhoneFill />
         </a>
       </div>

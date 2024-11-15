@@ -56,8 +56,18 @@
   color: var(--Water-Wonder);
   /* text-transform: lowercase; */
 }
-.mailid{
+.mailid {
   text-transform: lowercase;
+}
+.iconGroup {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.iconGroup a{
+  color: var(--CeladonSorbet);
 }
 @media (max-width: 768px) {
   .footer-container {
